@@ -40,15 +40,4 @@ feature 'a food item is created' do
     expect(page).to have_content(grub.quantity)
   end
 
-  # scenario 'a food item cannot have the same description' do
-  #   bread_item1 = FoodItem.create(title: 'bread', description: 'whole grain')
-  #   visit '/'
-  #   click_on 'Add Food Item'
-  #   visit '/'
-  #   bread_item2 = FoodItem.create(title: 'bread', description: 'whole grain')
-  #   click_on 'Add Food Item'
-  #   expect(page).to have_content('Invalid food item entry or food item has duplicate description')
-  #   FoodItem.destroy_all
-  # end
-
 end
