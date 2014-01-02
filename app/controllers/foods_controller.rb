@@ -12,7 +12,7 @@ class FoodsController < ApplicationController
     if @food.save
       redirect_to foods_path, notice: 'Food item added successfully'
     else
-      render :new#, notice: 'Invalid food item entry or food item has duplicate description'
+      render :new
     end
   end
 
