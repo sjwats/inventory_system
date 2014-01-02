@@ -1,7 +1,6 @@
 InventorySystem::Application.routes.draw do
-  root 'inventories#index'
-  resources :inventories
-  resources :food_items
+  root 'foods#index'
+  resources :foods
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
